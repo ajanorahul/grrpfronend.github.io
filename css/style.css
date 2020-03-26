@@ -1,0 +1,382 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin:0; padding:0; box-sizing: border-box; font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+p{
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color:green;
+}
+.extra-div h2 .servicediv h2{
+    font-size: 1rem;
+    margin: 20px 0 15px 0;
+    font-weight: bold;
+    line-height: 1.1;
+    word-spacing: 4px;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,168,255,0.3),rgba(0,168,255,0.3)),url('../images/hi1.jpg');
+
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* clip-path: polygon(100% 0%,100% 75%,50% 100%, 0% 75%, 0 0); */
+    position: relative;
+}
+.header:before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    opacity: .1;
+    z-index: -1;
+    background-image: radial-gradient(to right, #1e5799 0%, #3ccdbb 0%,#16c9f6 100%);
+
+}
+.navbar:before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    opacity: .1;
+    z-index: -1;
+    background-image: radial-gradient(to right, #1e5799 0%, #3ccdbb 0%,#16c9f6 100%);
+
+
+
+}
+.nav-item a{
+    color: rgb(255, 255, 255)!important;
+    font-weight: bold;
+    word-spacing: 2px;
+}
+.header-section{
+    width: 100%;
+    height: inherit;
+    color:#fff;
+    text-align: center;
+    position: relative;
+}
+.center-div{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+}
+.header-buttons a{
+    border:  2px solid #e7661c;
+    border-radius: 10px;
+    margin: 0 5px;
+    padding:12px 35px;
+    outline: none;
+    color:#fff;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 400;
+    line-height: 1.4;
+
+
+}
+.header-buttons a:hover{
+    color:#fff;
+    background:#e7661c;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+
+}
+.center-div p{
+    font-size: 1.3rem;
+    padding: 10px 0 20px 0;
+    color: #e7661c;
+}
+
+/* Header div start */
+
+.header-extradiv{
+    width: 100%;
+    height: auto;
+    margin: 100px 0;
+    text-align: center;
+    
+}
+.extra-div{
+    background: #fff;
+    border:medium none;
+    padding: 40px!important;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+.extra-div:hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+    transform: translateY(-20px);
+}
+
+/* Header div END */
+
+.serviceoffer{
+    background: #f3f5f6;
+    padding: 50px 0;
+    margin-bottom: 50px;
+}
+.headings h1{
+    font-size: 1.5rem;
+    font-size: 600;
+    text-transform: uppercase;
+    padding-bottom: 50px;
+}
+.service-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: green;
+
+
+}
+.project-work{
+    margin: 100px 0;
+}
+.project-work h2{
+    font-size: 1.6rem;
+    padding-bottom: 10px;
+}
+.project-work h1{
+    font-size: 2rem;
+    text-align: center;
+    color: aqua;
+    font-weight: bold;
+   
+}
+.project-work p{
+    color: black!important;
+}
+
+/* Price Start */
+
+.pricing{
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+    position: relative;
+    /* background-color:  #16c9f6; */
+   
+}
+
+.pricing:before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background: linear-gradient(160deg,#16c9f6 55%,#fff 0%);
+
+
+
+}
+.money{
+    font-size: 40px;
+    line-height: 1;
+    color:#16c9f6;
+    margin-bottom: 10px;
+}
+.card{
+    transition: 0.4s ease;
+}
+.card-header{
+    font-size: 1.6rem;
+    font-weight: bold;
+    background: #fff!important;
+    padding: 25px !important;
+}
+.card-body{
+    padding: 30px 0px!important;
+}
+.card-body li{
+    margin: 10px 0;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.6;
+}
+.card-footer{
+    background: white!important;
+    padding: 30px 0px!important;
+}
+.card-footer a{
+    border:  2px solid #16c9f6;
+    border-radius: 10px;
+    margin: 0 5px;
+    padding:12px 35px;
+    outline: none;
+    color:#16c9f6;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 400;
+    line-height: 1.4;
+
+
+}
+.card:hover .card-footer a{
+    color:#fff;
+    background:#e7661c;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+
+}
+.card:hover{
+    transform: translateY(-20px);
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+
+.card:hover .card-header, .card:hover .money{
+    color:#16c9f6;
+}
+.card-second{
+    transform: translateY(-20px);
+
+}
+
+
+
+/* Price Ends */
+
+
+
+
+.contactus{
+    width: 100%;
+    height: 90vh;
+    padding: 80px 0;
+    position: relative;
+
+}
+.contactus h1{
+    padding-bottom: 10px;
+}
+.contactus:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background: linear-gradient(200deg,#16c9f6 55%,#fff 0%);
+}
+
+.form-class button{
+    
+    border-radius: 10px;
+    margin: 0 5px;
+    padding:15px 35px;
+    outline: none;
+    color:#e7661c;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 400;
+    line-height: 1.4;
+
+
+}
+::placeholder{
+    font-size: 0.8rem;
+}
+
+.newsletter{
+    width: 100%;
+    height: auto;
+    margin: 80px 0;
+}
+.news-input{
+    border-radius: 100px 0px 0px 100px!important;
+    min-width: 150px;
+    min-height: 45px;
+}
+.input-group-text{
+    color:#fff!important;
+    background: #e7661c!important;
+    border-radius: 0 50px 50px 0!important;
+    min-width: 30px;
+    min-height: 45px;
+    
+}
+
+.footer{
+    width: 100%;
+    height: auto;
+    padding: 70px 0 20px 0;
+    background:#007bff;
+}
+.footer p{
+    color:#fff;
+
+}
+.footer li a{
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize;
+   
+    
+}
+.footer h3{
+    text-transform:uppercase;
+    color: #fff;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-weight: 600;
+ 
+}
+#myBtn{
+    display: none;
+    position:fixed;
+    bottom: 20px;
+    right: 40px;
+    z-index:99;
+    border: none;
+    color:#fff;
+    background: #00abff;
+    padding: 10px;
+    border-radius: 5px;
+}
+#myBtn:hover{
+    color:#fff;
+    background:#e7661c;
+
+}
+@media(max-width:768px){
+    .nav-item{
+        text-align: center;
+    }
+    .pricing,.contactus{
+        height: auto;
+        margin-top: 50px;
+    }
+    .card-second{
+        transform: translateY(0px);
+        margin: 30px 0;
+    }
+    .footer{
+        margin: 30px 0;
+    }
+}
